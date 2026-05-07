@@ -141,7 +141,7 @@ static void initDeviceMemory(void) {
 // Parameters: None
 // Returns: None
 // Side Effect: Modifies the hPos and hVel arrays with the new positions and accelerations after 1 INTERVAL
-void compute() {
+extern "C" void compute(void) {
     if (!deviceReady) {
         initDeviceMemory();
     }
